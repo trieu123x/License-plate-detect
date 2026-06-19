@@ -2,7 +2,7 @@ from ultralytics import YOLO
 from paddleocr import PaddleOCR
 import cv2
 
-detector = YOLO(r"C:\Users\admin\Downloads\runs\detect\train\weights\best.pt")
+detector = YOLO(r"C:\Users\admin\Downloads\code_ai\license-place-detector\detect\train\weights\best.pt")
 
 ocr = PaddleOCR(
     use_doc_orientation_classify=False,
@@ -11,7 +11,7 @@ ocr = PaddleOCR(
     lang="en"
 )
 
-img = cv2.imread(r"C:\Users\admin\Downloads\runs\Dieu_0017.png")
+img = cv2.imread(r"C:\Users\admin\Downloads\code_ai\license-place-detector\Dieu_0017.png")
 img_display = img.copy()
 results = detector(img,conf=0.5,iou=0.5)
 
