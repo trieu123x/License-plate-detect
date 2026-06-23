@@ -3,3 +3,5 @@ __pycache__/
 
 *.onnx
 ocr_env
+Vietnam license-plate.v1i.yolov8/
+debug_chars/

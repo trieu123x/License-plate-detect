@@ -11,7 +11,7 @@ ocr = PaddleOCR(
     lang="en"
 )
 
-img = cv2.imread(r"C:\Users\admin\Downloads\code_ai\license-place-detector\Dieu_0017.png")
+img = cv2.imread(r"C:\Users\admin\Downloads\code_ai\license-place-detector\Vietnam license-plate.v1i.yolov8\test\images\CarLongPlate5_jpg.rf.bf8208d84fbfbb3469330cb1802fb9a8.jpg")
 img_display = img.copy()
 results = detector(img,conf=0.5,iou=0.5)
 
